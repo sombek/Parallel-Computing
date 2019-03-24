@@ -185,6 +185,7 @@ int main(int argc, char *argv[]) {
 
     int total = (int) sum1 + (int) sum2 + (int) sum3 + (int) sum4;
     printf("Total Sum is: %d\n", total);
+
     return 0;
 }
 
