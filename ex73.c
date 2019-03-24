@@ -33,9 +33,6 @@ int main() {
     t2_args.character = '0'; // initialize the second thread argument
     t2_args.count = 100; // initialize the second thread argument
 
-    pthread_create(&t2_id,
-                   NULL,
-                   print,
-                   (void *) &t2_args); // create the second thread and pass the thread argument object
+    pthread_create(&t2_id,NULL,print,(void *) &t2_args); // create the second thread and pass the thread argument object
     pthread_join(t2_id, NULL); // wait then joint the second worker thread to the master thread
 }
